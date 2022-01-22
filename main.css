@@ -1,9 +1,31 @@
+html{
+    transition: background-color 0.6s ease;
+}
+
 header{
     width: 100vw;
     height: 60px;
     background-color: #0075FF;
     position: fixed;
     margin-top: -15px;
+}
+
+main{
+    transition: color 0.6s ease;
+    transition: background-color 0.6s ease;
+}
+
+#mode-switcher{
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px;
+    z-index: 100;
+    transition: background-color 0.6s ease;
 }
 
 header h1{
@@ -13,6 +35,21 @@ header h1{
 
 .sc-icon{
     width: 100px;
+    /* transition: background-image 0.5s ease; */
+}
+
+.skill{
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+
+.skill:hover {
+    box-shadow: 0 5px 20px black;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease;
+
+    /* margin-top: -10px; */
 }
 
 #sc{
@@ -46,6 +83,11 @@ a{
 .skdes{
     margin-top: 100%;
     font-size: 40px;
+    color: black;
+}
+
+#skills a{
+    cursor: pointer;
 }
 
 #main-block{
