@@ -19,7 +19,9 @@ main{
     cursor: pointer;
     margin-bottom: 10px;
     margin-right: 10px;
-    width: 100px;
+    width: 10%;
+    min-width: 70px;
+    max-width: 120px;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -88,6 +90,11 @@ a{
 
 #skills a{
     cursor: pointer;
+}
+
+.ctr {
+    width: 75%;
+    margin: 0 auto;
 }
 
 #main-block{
