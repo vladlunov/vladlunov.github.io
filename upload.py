@@ -8,7 +8,7 @@ file_path = "null"
 @app.route("/", methods=["GET"])
 def main():
     if (request.remote_addr == ip):
-        return send_file(file_path)#, attachment_filename='python.jpg')
+        return send_file(file_path)
     else:
         return "Access denied"
 
