@@ -10,10 +10,6 @@ def main():
     if (request.remote_addr == ip):
         return send_file(file_path)
     else:
-        return "Access denied"
-
-@app.route("/ip", methods=["GET"])
-def ip():
-    return "<h1>"+request.remote_addr+"</h1>"
+        return "Access denied "+request.remote_addr
 
 app.run(host="0.0.0.0")
